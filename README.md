@@ -340,7 +340,32 @@ ros2 run --prefix 'gdb -ex run --args' sensor_publisher lidar_simulator
   - [ ] Add derivative filtering
 
 ### Quick Daily Practice (15 mins/day)
-- [ ] Monday: Read one
+- [ ] Monday: Read one Autoware module source code
+- [ ] Tuesday: Implement one enhancement from TODO list
+- [ ] Wednesday: Practice Git workflows (branching, merging)
+- [ ] Thursday: Debug a ROS2 node with GDB
+- [ ] Friday: Review research papers on autonomous parking
+
+### Questions to Prepare
+- [ ] Draft 5 technical questions about the Errol platform
+- [ ] Prepare questions about Autoware.auto architecture
+- [ ] List areas where you need clarification
+
+### Optional Advanced Preparation
+- [ ] **Simulation**
+  - [ ] Install Gazebo Fortress
+  - [ ] Create simple robot model
+  - [ ] Test your controllers in simulation
+
+- [ ] **Algorithms**
+  - [ ] Implement A* path planning
+  - [ ] Code RRT for parking trajectories
+  - [ ] Study SLAM basics
+
+- [ ] **Hardware Understanding**
+  - [ ] Research Ouster/Velodyne lidar specs
+  - [ ] Understand drive-by-wire systems
+  - [ ] Learn CAN bus basics
 
 ## Contact
 
