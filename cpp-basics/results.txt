@@ -1,0 +1,7 @@
+Sensor Data Statistics
+Count: 10
+Mean: 55
+Median: 55
+StdDev: 28.7228
+Min: 10
+Max: 100
