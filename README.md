@@ -297,10 +297,50 @@ ros2 run --prefix 'gdb -ex run --args' sensor_publisher lidar_simulator
 
 ## Next Steps
 
-1. Study Autoware.auto architecture before starting
-2. Practice with real sensor data (download datasets)
-3. Learn about vehicle kinematics (Ackermann steering)
-4. Understand coordinate transformations (TF2 in ROS2)
+### Before Starting (Priority Tasks)
+- [ ] **Study Autoware.auto architecture**
+  - [ ] Read the [Autoware.auto documentation](https://autowarefoundation.github.io/autoware.auto/AutowareAuto/)
+  - [ ] Understand the parking module structure
+  - [ ] Review the perception-planning-control pipeline
+
+- [ ] **Practice with real sensor data**
+  - [ ] Download [KITTI dataset](http://www.cvlibs.net/datasets/kitti/) samples
+  - [ ] Modify `data_processor.cpp` to handle real lidar data
+  - [ ] Test anomaly detection on real-world noise
+
+- [ ] **Learn vehicle kinematics**
+  - [ ] Study Ackermann steering geometry
+  - [ ] Implement bicycle model kinematics
+  - [ ] Add turning radius constraints to parking planner
+
+- [ ] **Master coordinate transformations**
+  - [ ] Complete [TF2 tutorials](https://docs.ros.org/en/humble/Tutorials/Intermediate/Tf2/Tf2-Main.html)
+  - [ ] Add frame transformations to your nodes
+  - [ ] Practice with `laser_frame` to `base_link` transforms
+
+### Week 1 Preparation Checklist
+- [ ] **Environment Setup**
+  - [ ] Ensure dual-boot Ubuntu works reliably (not just WSL)
+  - [ ] Install Autoware dependencies
+  - [ ] Set up IDE with C++ debugging
+
+- [ ] **C++ Skills**
+  - [ ] Implement at least 2 advanced enhancements from above
+  - [ ] Practice debugging with GDB
+  - [ ] Review modern C++ features (smart pointers, lambdas)
+
+- [ ] **ROS2 Skills**
+  - [ ] Create a service for parking requests
+  - [ ] Implement parameter loading from YAML
+  - [ ] Practice with ROS2 bag files
+
+- [ ] **Control Theory**
+  - [ ] Implement PID controller in obstacle avoider
+  - [ ] Test different PID gains
+  - [ ] Add derivative filtering
+
+### Quick Daily Practice (15 mins/day)
+- [ ] Monday: Read one
 
 ## Contact
 
