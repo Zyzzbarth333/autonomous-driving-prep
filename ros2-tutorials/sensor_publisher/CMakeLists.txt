@@ -53,4 +53,29 @@ install(DIRECTORY launch
   DESTINATION share/${PROJECT_NAME}
 )
 
+find_package(nav_msgs REQUIRED)
+
+add_executable(parking_planner src/parking_planner.cpp)
+ament_target_dependencies(parking_planner rclcpp sensor_msgs geometry_msgs nav_msgs)
+
+install(TARGETS
+  lidar_simulator
+  lidar_processor  
+  obstacle_avoider
+  parking_planner
+  DESTINATION lib/${PROJECT_NAME})
+
+find_package(std_msgs REQUIRED)
+
+add_executable(integrated_parking_controller src/integrated_parking_controller.cpp)
+ament_target_dependencies(integrated_parking_controller rclcpp sensor_msgs geometry_msgs std_msgs)
+
+install(TARGETS
+  lidar_simulator
+  lidar_processor  
+  obstacle_avoider
+  parking_planner
+  integrated_parking_controller
+  DESTINATION lib/${PROJECT_NAME})
+
 ament_package()
